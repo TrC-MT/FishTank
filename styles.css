@@ -1,0 +1,46 @@
+*{
+    transition-duration: 4s;
+}
+body{
+    width:100%;
+    margin: 0px;
+    background-color: #000EDB; /* Do not change this color. */
+}
+.fishbox{
+    width: 100%;
+    position: relative;
+    animation-name: marquee;
+    animation-delay: 0ms;
+    animation-duration: 5s; /* Change for the speed of the fish */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 2%;
+    background-color: #000EDB; /* Do not change this color. */
+}
+img{
+    position: relative;
+    width: 15%; /* 17% max 12% min*/
+}
+span{
+    width: 15%;
+    height: 168px;
+    right: 0px;
+    position: absolute;
+    background-color: rebeccapurple ; /* Change in the script to change the fish color */
+}
+
+@keyframes marquee {
+    0%{
+        transform: translateX(0%);
+        /* transform: rotateY(180deg) */
+    }
+    100%{
+        transform: translateX(-85%);
+        
+    }
+   
+}
