@@ -1,5 +1,5 @@
 *{
-    transition-duration: 4s;
+    transition-duration: 4s; /* This controls the smoothness of the transitions */
 }
 body{
     width:100%;
@@ -33,7 +33,7 @@ span{
     background-color: rebeccapurple ; /* Change in the script to change the fish color */
 }
 
-@keyframes marquee {
+@keyframes marquee { /* This is what make the fish move from side to side */
     0%{
         transform: translateX(0%);
         /* transform: rotateY(180deg) */
