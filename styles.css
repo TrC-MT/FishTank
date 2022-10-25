@@ -50,11 +50,11 @@ main{
 .fishbox{
     width: 100%;
     position: relative;
-    animation-name: marquee;
+    animation-name: marquee; /* After learning that marquees were depreciated, I wanted to try this with CSS animations */
     animation-delay: 0ms;
     animation-duration: 5s; /* Change for the speed of the fish */
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; /* This makes the fish go side to side and not teleport. */
     animation-timing-function: linear;
     display: flex;
     justify-content: right;
@@ -68,7 +68,7 @@ img{
 }
 span{
     width: 15%;
-    height: 168px; /* This will change to a % */
+    height: 168px; /* This will change to a % when I figure out sizes after the other bugs*/
     right: 0px;
     position: absolute;
     background-color: #DBB216 ; /* Change in the script to change the fish color */
@@ -76,12 +76,9 @@ span{
 
 @keyframes marquee { /* This is what make the fish move from side to side */
     0%{
-        transform: translateX(0%);
-        /* transform: rotateY(180deg) */
+        transform: translateX(0%); /* This is the fish all the way to the right */
     }
     100%{
-        transform: translateX(-85%);
-        
+        transform: translateX(-85%); /* This is the fish all the way to the left */
     }
-   
 }
