@@ -9,21 +9,41 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <div id="1b" class="fishbox"> <!--This positions the fish is on the screen-->
-        <span id="1s"></span> <!--This is the color of the fish-->
-        <img id ="1f" src="images/Fish1/FishGifTry2.gif" alt="Fish1">
-    </div>
-    <div id="2b" class="fishbox">
-        <span id="2s"></span>
-        <img id ="2f" src="images/Fish1/FishGifTry2.gif" alt="Fish2">
-    </div>
-    <div id="3b" class="fishbox">
-        <span id="3s"></span>
-        <img id ="3f" src="images/Fish1/FishGifTry2.gif" alt="Fish3">
-    </div>
-    <div id="4b" class="fishbox">
-        <span id="4s"></span>
-        <img id ="4f" src="images/Fish1/FishGifTry2.gif" alt="Fish4">
-    </div>
+    <header>
+        <h1>Fish Tank</h1>
+        <div class="scriptControls">
+            <div class="instructions">
+                <h4>MaxInterval (ms)</h4>
+                <h4>MinInterval (ms)</h4>
+                <h4>MaxDuration (s)</h4>
+                <h4>MinDuration (s)</h4>
+            </div>
+            <div class="inputs">
+                <input id="MaxIntervalInput" type="text" value="20000">
+                <input id="MinIntervalInput" type="text" value="10000">
+                <input id="MaxDurationInput" type="text" value="8">
+                <input id="MinDurationInput" type="text" value="4">
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="1b" class="fishbox"> <!--This positions the fish is on the screen-->
+            <span id="1s"></span> <!--This is the color of the fish-->
+            <img id ="1f" src="images/Fish1/FishGifTry2.gif" alt="Fish1">
+        </div>
+        <div id="2b" class="fishbox">
+            <span id="2s"></span>
+            <img id ="2f" src="images/Fish1/FishGifTry2.gif" alt="Fish2">
+        </div>
+        <div id="3b" class="fishbox">
+            <span id="3s"></span>
+            <img id ="3f" src="images/Fish1/FishGifTry2.gif" alt="Fish3">
+        </div>
+        <div id="4b" class="fishbox">
+            <span id="4s"></span>
+            <img id ="4f" src="images/Fish1/FishGifTry2.gif" alt="Fish4">
+        </div>
+    </main>
 </body>
 </html>
